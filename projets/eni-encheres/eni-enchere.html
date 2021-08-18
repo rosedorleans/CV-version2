@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Dorléans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-onglet.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../rd-cv-style.css">
+    <link rel="stylesheet" href="css/encheres-style.css">
+    
+</head>
+<body>
+    <div id="btn-retour">
+        <img src="images/left-arrow.png" alt="left-arrow">
+        <a href="../../rose-dorleans.html">Retour sur rosedorleans.fr</a>
+    </div>
+    <div id="btn-github">
+        <a href="https://github.com/William-Schiller/ProjetEncheres" target="_blank">
+            <p>Github du projet</p>
+            <img src="../../images/github.png" alt="github">
+        </a>
+    </div>
+    <div id="browser">
+        <div class="contain">
+            <div class="row browser-row">
+                <div class="column left">
+                    <span class="dot" style="background:#ED594A;"></span>
+                    <span class="dot" style="background:#FDD800;"></span>
+                    <span class="dot" style="background:#5AC05A;"></span>
+                </div>
+                <div class="column middle">
+                    <input type="text" value="http://www.irss.fr">
+                    <span id="mobile-dot"></span>
+                    <span id="mobile-line"></span>
+                </div>
+                <div class="column right">
+                    <div style="float:right">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    </div>
+                </div>
+                </div>
+                <div id="border">
+                    <div class="content">
+                        <header class="container-fluid">
+                            <div class="row" id="menu">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img alt="logo" src="images/logo-EniEncheres-long.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-8 pe-5">
+                                    <div class="row m-3 text-white">
+                                        <div class="col-md-3 pseudo">
+                                            <p>Bienvenue JohnDoe !</p>
+                                        </div>
+                                        <div class="col-md-3 btn-mobile">
+                                            <p>
+                                                <a class="nav-link active" href="#">Vendre un article</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 btn-mobile">
+                                            <p>
+                                                <a class="nav-link active" href="#">Mon profil</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 btn-mobile">
+                                            <p>
+                                                <a class="nav-link active"  href="#">Se Déconnecter</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <main id="bg">
+                            <div class="container pt-4" id="form">
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10 p-4">
+                                        <h1>Liste des Enchères</h1>
+                                        <div>
+                                            <div class="row mt-5">
+                                                <p>Filtres :</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-6 inner-addon left-addon mb-4">
+                                                        <i class="glyphicon glyphicon-search"></i>
+                                                        <input class="form-control" type="text" name="skeyword" placeholder="Le nom de l'article contient">
+                                                    </div>
+                                                    <div class=" mb-3">
+                                                        <label>Catégorie : </label>
+                                                        <select class="selectpicker" name="scategorie">
+                                                            <option value="0">Toutes</option>
+                                                            <option value="${cat.no_categorie}">Cuisine</option>
+                                                            <option value="${cat.no_categorie}">Salle de bain</option>
+                                                            <option value="${cat.no_categorie}">Jardin</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <c:if test="${!empty sessionScope.myUser}">
+                                                        <div class="col-6 mt-3">
+                                                            <p>Achats</p> 
+                                                            <div class="ms-3">
+                                                                <input class="form-check-input" type="radio" name="sachatsVentes" value="enchereouverte" id="checkAchat1">
+                                                                <label for="checkAchat1">Enchères ouvertes</label> <br>
+                                                                <input class="form-check-input" type="radio" name="sachatsVentes" value="mesenchere" id="checkAchat2">
+                                                                <label for="checkAchat2">Mes enchères</label> <br>
+                                                                <input class="form-check-input" type="radio" name="sachatsVentes" value="mesencheresremportees" id="checkAchat3">
+                                                                <label for="checkAchat3">Mes enchères remportées</label> <br>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 mt-3">
+                                                            <p>Mes Ventes</p>
+                                                            <div class="ms-3">
+                                                                <input class="form-check-input borderCheckBox" type="radio" name="sachatsVentes" value="mesventeencours" id="checkVente1">
+                                                                <label for="checkVente1">Mes ventes en cours</label> <br>
+                                                                <input class="form-check-input borderCheckBox" type="radio" name="sachatsVentes" value="ventenondebutees" id="checkVente2">
+                                                                <label for="checkVente2">Ventes non débutées</label> <br>
+                                                                <input class="form-check-input borderCheckBox" type="radio" name="sachatsVentes" value="ventesterminees" id="checkVente3">
+                                                                <label for="checkVente3">Ventes terminées</label> <br>
+                                                            </div>
+                                                        </div>
+                                                    </c:if>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="mt-5">
+                                                <button class="btn btn-success me-2">Rechercher</button>
+                                            </div>
+                                        </div>	
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="displayFlexRow mt-3">
+                                    <div class="row" style="justify-content: center">
+                                        <div class="my-3 mx-auto box-vente"> 
+                                            <button class="btn btn-outline-success btn-vente" style="border: none" type="submit" name="sno_article" value="${ art.article.no_article}">
+                                                <div class="row m-3">
+                                                    <div class="col-md-6">
+                                                        <img width="300" height="300" src="images/chaise.jpg" alt="image de l'article" class="img-thumbnail">
+                                                    </div>
+                                                    <div class="col-md-6" style="font-size:20px">
+                                                        <p style="font-weight: bold;text-decoration: underline">
+                                                        Chaise</p>
+                                                        <p>Prix : 500 points</p>
+                                                        <p>Fin de l'enchère : 12/06/2022 12h00</p>
+                                                        <p>Vendeur : johnSeller</p>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="my-3 mx-auto box-vente"> 
+                                            <button class="btn btn-outline-success btn-vente" style="border: none" type="submit" name="sno_article" value="${ art.article.no_article}">
+                                                <div class="row m-3">
+                                                    <div class="col-md-6">
+                                                        <img width="300" height="300" src="images/chaise.jpg" alt="image de l'article" class="img-thumbnail">
+                                                    </div>
+                                                    <div class="col-md-6" style="font-size:20px">
+                                                        <p style="font-weight: bold;text-decoration: underline">
+                                                        Chaise</p>
+                                                        <p>Prix : 500 points</p>
+                                                        <p>Fin de l'enchère : 12/06/2022 12h00</p>
+                                                        <p>Vendeur : johnSeller</p>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </body>
+                        <footer class="container-fluid p-4">
+                            <div class="row">
+                                <div class="col-md-6 ms-5" id="footer">
+                                    <a href="https://www.eni-ecole.fr/" target="_blank" >
+                                        <img src="images/eni-logo.png" alt="eni-logo">
+                                    </a>
+                                    <p>© ENI Ecole Informatique : by William SCHILLER, Aurelien SUEL et Rose DORLEANS</p>
+                                </div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </footer>
+                    </div> <!-- .content -->
+                </div> <!-- #border -->
+            </div> <!-- .row .browser-row -->
+        </div> <!-- .contain -->
+    </div> <!-- #browser -->
+</body>
+</html>

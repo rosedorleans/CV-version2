@@ -1,0 +1,588 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #e44f16;
+}
+
+.btn-primary {
+    background-color: #e44f16 !important;
+    border-color: #e44f16 !important;
+}
+
+.link {
+    color: #e44f16 !important;
+  }
+
+
+/* Browser window fake */
+
+#browser {
+    padding: 55px 2%;
+}
+
+#browser .contain {
+    border: 3px solid #d0d0d0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  #browser .row {
+    margin: 0;
+    padding: 10px;
+    background: #d0d0d0;
+
+  }
+
+  #browser .column {
+    float: left;
+  }
+  
+  #browser .left {
+    width: 15%;
+  }
+  
+  #browser .right {
+    width: 10%;
+  }
+  
+  #browser .middle {
+    width: 75%;
+  }
+
+  #browser .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #browser .dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  #browser #mobile-dot, #browser #mobile-line {
+    display: none;
+  }
+  
+  #browser input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    margin-top: -8px;
+    height: 25px;
+    color: #666;
+    padding: 5px;
+  }
+  
+  #browser .bar {
+    width: 17px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 3px 0;
+    display: block;
+  }
+
+  #browser .content {
+    max-height: 800px;
+    overflow-y: scroll;
+  }
+
+/* Mobile fake */
+
+@media only screen and (max-width : 570px){
+
+    #browser .contain {
+        border: 4px solid #737373;
+        border-radius: 40px;
+    }
+
+    #browser .row {
+        background: linear-gradient(272deg, black, #565656);
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+
+    #browser .left {
+        width: 15%;
+    }
+      
+      
+
+    #browser .middle {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    #browser .right {
+        width: 15%;
+    }
+
+    #browser .dot, #browser input[type=text], #browser .bar {
+        display: none;
+    }
+
+    #browser #mobile-dot, #browser #mobile-line {
+        display: block;
+    }
+
+    #browser #mobile-dot {
+        background-color: #333;
+        height: 16px;
+        width: 16px;
+        margin: 4px auto;
+        border: 1px solid #757575;
+        border-radius: 50%;
+    }
+
+    #browser #border {
+        height: 600px;
+        background-image: linear-gradient(272deg, black, #565656);
+        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 36px;
+    }
+
+    #browser .content {
+        height: 550px;
+        margin: 0 10px 10px;
+        background-color: #FFF;
+        max-height: 650px;
+        overflow-y: scroll;
+
+    }
+
+}
+  
+
+/* Menu */
+
+    #btn-retour {
+        position: absolute;
+        margin-top: 15px;
+    }
+
+    #btn-retour img {
+        height: 25px;
+        margin: 0 10px 0 15px;
+    }
+
+    #btn-retour a {
+        color: #000;
+        font-size: 12px;
+    }
+
+    #header-bar {
+        background-color: #19223D;
+        height: 100px;
+        width: 100%;
+        padding-top: 35px;
+    }
+
+    .center-menu {
+        text-align: center;
+    }
+
+    .menu-btn{
+        color:#FFF;
+        background:rgba(0, 0, 0, 0.5);
+        padding:10px 20px;
+        font-size:12px;
+        font-weight: bold;
+        text-decoration:none !important;
+        letter-spacing:2px;
+        text-transform:uppercase;
+    }
+
+    .menu-btn:hover{
+        border:none;
+        background:rgba(0, 0, 0, 0.4);
+        background:#fff;
+        padding:20px 20px;
+        color:#1b1b1b;
+        font-weight: bold;
+    }
+
+    .menu-active {
+        border:none;
+        background:rgba(0, 0, 0, 0.4);
+        background:#fff;
+        padding:20px 20px;
+        color:#1b1b1b;
+        font-weight: bold;
+        text-transform:uppercase;
+    
+    }
+
+
+/* Map */
+
+    .map {
+        overflow: hidden;
+        margin: 3% 6% 1%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+        .map-text {
+            width: 30%;
+            float: left;
+        }
+
+            .map-text a {
+                color: #19223D;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .map-text a.is-active {
+                    color: #E44F16 !important;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+        .map-image {
+            width: 45%;
+            float: left;
+        }
+
+        @media only screen and (max-width : 1400px){
+
+            .map {
+                margin: 5% 6% 1%;
+            }
+
+            .map-image {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width : 1200px){
+
+            .map-image {
+                width: 65%;
+            }
+        }
+
+        @media only screen and (max-width : 1000px){
+
+            .map {
+                margin: 5% 6% 1%;
+            }
+
+            .map-image {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (max-width : 850px){
+
+            .map {
+                flex-direction: column;
+            }
+
+            .map-text, .map-image {
+                width: 100%;
+            }
+        }
+
+        .map-image ellipse {
+                cursor: pointer;
+                transition: fill 0.3s;
+            }
+
+                /*.map-image ellipse:hover {*/
+                /*    fill: #FFF !important;*/
+                /*    transition: fill 0.3s;*/
+                /*}*/
+
+                .map-image a.is-active ellipse {
+                    fill: #FFF !important;
+                    transition: fill 0.3s;
+                }
+
+
+
+                /*  Zone pour effacer les regions
+                  (ajouter les identifiants des régions ici) */
+
+                #FR-HDF, #FR-GES, #FR-ARA, #FR-BFC, #FR-IDF, #FR-OCC, #FR-PAC {
+                    fill: #19223d1f !important;
+                }
+
+                /*  Zone pour effacer les regions
+                  (ajouter les identifiants des régions ici) */
+
+                #FR-COR {
+                    display: none;
+                }
+
+
+    /* Modal villes */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 25%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    /* contenu du modal */
+    .modal-content {
+        background-color: #fefefe !important;
+        margin: auto;
+        padding: 20px;
+        border: solid #19223d !important;
+        border-radius: 15px !important;
+        width: 30% !important;
+    }
+
+    /* bouton close */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+    /*Page Calendrier*/
+
+    #calendar-box {
+        width: 70%;
+    }
+
+    @media only screen and (max-width : 1000px){
+
+        #calendar-box {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width : 850px){
+
+        #calendar-box {
+            width: 90%;
+        }
+    }
+
+    #calendar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    body a {
+        color: #19223D;
+    }
+
+    body a:hover {
+        color: #00134d;
+        cursor: pointer;
+    }
+
+    
+    /* Légende */
+
+    .legend {
+        margin: 20px 0;
+    }
+
+    .leg-row {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .leg-block {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin: 7px 7px 0 0;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .leg-sport .dot {
+        background-color: #F0AE2C !important;
+    }
+
+    .leg-sante .dot {
+        background-color: #6CB75D !important;
+    }
+
+    .leg-social .dot {
+        background-color: #F2916C !important;
+    }
+
+    .leg-etudes-sup .dot {
+        background-color: #E53C5A !important;
+    }
+
+    .leg-def-sec .dot {
+        background-color: #005AA0 !important;
+    }
+
+    .leg-paramedical .dot {
+        background-color: #46A6A9 !important;
+    }
+
+    .leg-medical .dot {
+        background-color: #00A5DA !important;
+    }
+
+    .leg-bachelor .dot {
+        background-color: #6E68AD !important;
+    }
+
+
+/* FullCalendar */
+
+    .fc {
+        padding : 2%;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+    }
+
+    .fc thead {
+        color: #FFF !important;
+        background-color: #19223d !important;
+    }
+
+    .fc .fc-toolbar-chunk {
+        margin: 5px 0 0 0;
+    }
+
+    .fc .fc-toolbar-title {
+        margin: 10px 0 0 0 !important;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+
+    .fc .fc-button-active {
+        background-color: rgb(110, 60, 50);
+    }
+
+    .fc .fc-button-primary {
+
+        background-color: #E44F16;
+
+    }
+
+    .fc .fc-col-header-cell-cushion {
+        text-decoration: none;
+    }
+
+
+    .fc .fc-day-today {
+        background-color: #000a2729 !important;
+    }
+
+
+    /* Filtres */
+
+    .filters-menu {
+        margin: 20px 0 50px;
+        text-align : center;
+    }
+
+    #filters h2 {
+        font-size: 20px;
+    }
+
+    #filters .filters-title {
+        margin: 30px 0 20px;
+        text-decoration: underline;
+    }
+
+    #filters-cards {
+        margin-bottom: 20%;
+    }
+
+    #filters #card-title:before {
+        content: "\"";
+    }
+
+    #filters #card-title:after {
+        content: "\"";
+    }
+
+    .filters-list {
+        display: block;
+        position: sticky;
+        top: 20px;
+    }
+
+    #search {
+        margin-bottom: 20px;
+    }
+
+    #cities {
+        margin-bottom: 30px;
+    }
+
+    #filters-btn {
+        margin-bottom: 50px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+
+/* A Propos */
+
+#apropos-menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#apropos-text {
+    width: 60%;
+    margin: 5% auto;
+}
+
+@media only screen and (max-width : 1000px){
+    #apropos-text {
+        width: 80%;
+    }
+}
+
+
+
+#ps {
+ color: #6f6f6f;
+ font-size: 11px;
+ margin-top: 20px;
+}
+
+

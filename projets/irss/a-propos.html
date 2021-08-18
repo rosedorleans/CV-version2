@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="irss-style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css'>
+    <title>Rose Dorléans</title>
+</head>
+<body>
+    <div id="btn-retour">
+        <img src="images/left-arrow.png" alt="left-arrow">
+        <a href="../../rose-dorleans.html">Retour sur rosedorleans.fr</a>
+    </div>
+    <div id="btn-github">
+        <a href="https://github.com/rosedorleans/IrssPerso" target="_blank">
+            <p>Github du projet</p>
+            <img src="../../images/github.png" alt="github">
+        </a>
+    </div>
+    <div id="browser">
+        <div class="contain">
+            <div class="row">
+            <div class="column left">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+            </div>
+            <div class="column middle">
+                <input type="text" value="http://www.irss.fr">
+                <span id="mobile-dot"></span>
+                <span id="mobile-line"></span>
+            </div>
+            <div class="column right">
+                <div style="float:right">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+            </div>
+            </div>
+            <div id="border">
+                <div class="content">
+                    <header>
+                        <nav id="header-bar">
+                            <div class="center-menu">
+                                <a href="irss-home-carte.html" class="menu-btn">Carte</a>
+                                <a href="calendar.html" class="menu-btn">Calendrier</a>
+                                <a href="#" class="menu-active">A Propos</a>
+                            </div>
+                        </nav>
+                    </header>
+                    <div id="apropos-menu" class="text-center">
+                        <h1>A Propos</h1>
+                    </div>
+                    <div id="apropos-text">
+                        <p class="text-center">
+                            Stage de deux mois dans l'entreprise IRSS. <br>
+                            Du 10 mai au 2 juillet 2021 <br><br>
+                            Projet : mise à jour et refonte du site 
+                            <a href="https://www.irss.fr" class="link" target="_blank">IRSS.fr</a> <br>
+                            - Langages : PHP / MySQL / HTML / CSS / Javascript, et CMS Wordpress <br>
+                            - Optimisation des sites Web (référencement, UX) <br>
+                            - Rédaction des documentations techniques et fonctionnelles
+                        </p>
+                        <div class="p-3 m-2 border">
+                            <p>
+                                "J'ai créé une <b>carte interactive</b> au format SVG pour que les utilisateurs puissent cliquer sur les villes de France où se situent les écoles. 
+                                Un fichier Javascript permet de : <br>
+                                - changer la couleur des villes dans le texte et sur la carte au passage de la souris.<br>
+                                - afficher un modal au clic de la souris (exemple visible sur Caen)<br><br>
+                                J'ai développé un <b>calendrier</b> répertoriant tous les événements des écoles IRSS et j'y ai ajouté une page pour filtrer les événements par type de formation, ville et type d'événement"
+                            </p>
+                        </div>
+                        <p class="text-center" id="ps">
+                            Le calendrier n'est pas présent sur le site à ce jour. Un plugin The Event Calendar a été choisi. <br>
+                            Ce choix a été fait pour garantir la bonne mise à jour des composants. <br>
+                            La carte interactive est présente sur la page d'accueil du site. 
+                        </p>
+                    </div>
+                </div> <!-- .content -->
+            </div> <!--  border -->
+        </div> <!-- .contain -->
+    </div> <!-- #browser -->
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+a {
+    color: #EF8100;
+    transition: all 0.5s ease-out 0s;
+}
+
+    a:hover {
+        color: #c46900;
+
+    }
+
+link-border {
+    border-right: 1px solid;
+    padding: 0px;
+}
+
+header {
+    background-color: #EF8100;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+#menu {
+    font-size: 15px;
+}
+
+#imgAllOutings {
+    width: 190px;
+    margin-left: 40px;
+}
+
+.banniere {
+    width: 100%;
+    margin: 0;
+}
+
+.line-warning {
+    background-color: #EF8100;
+    padding: 1%;
+}
+
+#plan {
+    font-size: 18px;
+    font-weight: initial;
+    text-transform: none;
+}
+
+
+#button-send {
+    padding: 4px 15px;
+}
+
+#button-send img {
+    height: 30px;
+}
+
+table th {
+    background-color: #ef81003b;
+
+}
+
+#none {
+    color: #b8b8b8;
+}
+
+#picPlanner {
+    height: 42px;
+    width: 42px;
+    border-radius: 35px;
+    border: 2px solid;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #EF8100;
+    color: #FFFFFF;
+}
+
+.pic-profile-box{
+    height: 160px;
+    width: 160px;
+    background-color:#EF8100;
+}
+
+.pic-profile{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.soHot {
+    height: 45px;
+    border-radius: 30px;
+    margin-left: 4%;
+}
