@@ -197,6 +197,56 @@ body {
 }
 }
 
+/* menu mobile */
+@media only screen and(max-width : 700px){
+  
+  .home-body .menu-main svg {
+    height: 55px;
+    width: 55px;
+    margin: 0 5px;
+  }
+
+  .home-body .menu-main {
+    font-size: 18px;
+  }
+
+  .home-body .sub-menu {
+    left: -200px;
+  }
+
+  .home-body .sub-menu p,
+  .home-body .sub-menu a {
+    font-size: 15px;
+  }
+
+}
+
+/* menu small mobile */
+@media only screen and (max-width : 350px){
+  
+  .home-body .menu-main svg {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+  }
+
+  .home-body .menu-main {
+    font-size: 16px;
+  }
+
+  .home-body .sub-menu {
+    left: -170px;
+  }
+
+  .home-body .sub-menu p,
+  .home-body .sub-menu a {
+    font-size: 13px;
+  }
+
+}
+
+
+
 /* Modaux */
 
 .modaux .modal {
@@ -222,10 +272,12 @@ body {
 .modaux .modal__content {
   position: relative;
   text-align: center;
+  height: 300px;
   width: 500px;
   background: #fff;
   padding: 2em 2em;
   border-radius: 4px;
+  overflow-y: scroll;
 }
 
 .modaux .modal__content p,
@@ -455,7 +507,7 @@ body {
 /* accueil */
 
 .home-body #accueil {
-  width: 50%;
+  width: 55%;
   margin: 75px auto;
 }
 
@@ -476,7 +528,7 @@ body {
 @media only screen and (max-width : 1400px){ 
 
   .home-body #accueil {
-    width: 60%;
+    width: 65%;
     margin: 100px auto;
   }
 }
@@ -485,7 +537,7 @@ body {
 @media only screen and (max-width : 1000px){ 
 
   .home-body #accueil {
-    width: 70%;
+    width: 75%;
     margin: 135px auto;
   }
 
@@ -506,7 +558,7 @@ body {
 @media only screen and (max-width : 700px){ 
 
   .home-body #accueil {
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
   }
 
