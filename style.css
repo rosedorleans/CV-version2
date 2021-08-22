@@ -240,14 +240,19 @@ body {
 .modaux .modal__content {
   position: relative;
   text-align: center;
-  height: 300px;
+  height: 320px;
   width: 500px;
   background: #fff;
   padding: 2em 2em;
   border-radius: 4px;
-  overflow-y: scroll;
 }
 
+/* modal small mobile */
+@media only screen and (max-width: 800px) {
+  .modaux #ap-p-content {
+    overflow-y: scroll;
+  }
+}
 #cooking-r-modal .modal__content,
 #portail-d-modal .modal__content {
   width: 350px;
@@ -753,9 +758,10 @@ body {
 
 /* --------------------------------------------- */
 /* Browser window fake */
-#btn-retour, #btn-github {
-  position: absolute;
-  margin-top: 15px;
+.header-projet {
+  display: flex;
+  gap: 8%;
+  margin: 20px;
 }
 
 #btn-retour img {
@@ -776,28 +782,14 @@ body {
   text-decoration: underline;
 }
 
-#btn-github {
-  margin-left: 85%;
+.lang-line img {
+  height: 85px;
 }
 
-/* github big big screen */
-@media only screen and (min-width: 1700px) {
-  #btn-github {
-    margin-left: 90%;
-  }
+#btn-github {
+  margin-left: 20px;
 }
-/* github big big screen */
-@media only screen and (min-width: 701px) and (max-width: 1000px) {
-  #btn-github {
-    margin-left: 80%;
-  }
-}
-/* github mobile */
-@media only screen and (max-width: 700px) {
-  #btn-github {
-    margin-left: 70%;
-  }
-}
+
 #btn-github a {
   display: flex;
   flex-direction: row;
@@ -812,6 +804,7 @@ body {
 }
 
 #btn-github p {
+  width: 100px;
   margin-top: 6px;
   font-size: 12px;
   font-weight: normal;
@@ -822,7 +815,7 @@ body {
 }
 
 #browser {
-  padding: 55px 2%;
+  padding: 0px 2%;
 }
 
 #browser .contain {

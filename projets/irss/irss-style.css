@@ -165,20 +165,6 @@ h1 {
 
 /* Menu */
 
-    #btn-retour {
-        position: absolute;
-        margin-top: 15px;
-    }
-
-    #btn-retour img {
-        height: 25px;
-        margin: 0 10px 0 15px;
-    }
-
-    #btn-retour a {
-        color: #000;
-        font-size: 12px;
-    }
 
     #header-bar {
         background-color: #19223D;

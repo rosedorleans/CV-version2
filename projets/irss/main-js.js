@@ -35,7 +35,7 @@ links.forEach(function (link) {
     })
 })
 
-map.addEventListener('mouseleave', function () {
+map.addEventListener('mouseover', function () {
     activeArea()
 })
 
