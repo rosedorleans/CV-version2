@@ -7,7 +7,7 @@
         font-family: 'Roboto', sans-serif
     }
                 
-    header, footer {
+    .content header, footer {
         background-color:#254d3e
     }
 
@@ -161,7 +161,7 @@
         font-family: 'Roboto', sans-serif
     }
                 
-    header, footer {
+    .content header, footer {
         background-color:#254d3e
     }
 
@@ -310,7 +310,7 @@
         font-family: 'Roboto', sans-serif
     }
                 
-    header, footer {
+    .content header, footer {
         background-color:#254d3e
     }
 

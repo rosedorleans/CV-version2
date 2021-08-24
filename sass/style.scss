@@ -70,7 +70,7 @@ body {
 
 
 /* menu opaque */
-@media only screen and (max-width : 700px){
+@media only screen and (max-width : 900px){
   
   .home-body .sub-menu{
     background-color: #FFF;
@@ -98,6 +98,7 @@ body {
 #projets-encours-titre p {
   font-size: 19px;
   opacity: 0.9;
+  margin: 13px 0;
 }
 
 #apropos-projets a {
@@ -109,7 +110,7 @@ body {
   display: inline-flex;
 }
 
-.home-body .menu-item:hover .sub-menu{
+.home-body .menu-item:hover .sub-menu {
   pointer-events: all;
   animation: show 300ms cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
   transform-style: preserve-3d;
@@ -120,6 +121,7 @@ body {
     opacity: 1;   
   }
 }
+
 
 .home-body .menu-main {
   display: flex;
@@ -174,7 +176,7 @@ body {
   }
 
   .home-body .sub-menu{
-    top: 115px;
+    top: 110px;
     padding-top: 10px;
   }
 
@@ -188,7 +190,7 @@ body {
   
   .home-body .sub-menu {
     left: -207px;
-    padding: 10px;
+    padding: 25px 10px 10px;
 }
 }
 
@@ -281,6 +283,11 @@ body {
     overflow-y: scroll;
   }
 
+}
+
+.modaux #contact-content {
+    height: 275px;
+    width: 450px;
 }
 
 #cooking-r-modal .modal__content, 
@@ -493,9 +500,16 @@ body {
   box-shadow: 0 12px 35px 0 #ffeba726;
 }
 
-.home-body .dark-light:checked ~ .content .sub-menu {
-  background-color: #040614;
-  box-shadow: 0px 15px 20px 9px #1b1b1b;
+
+
+/* menu opaque */
+@media only screen and (max-width : 900px){
+  
+  .home-body .dark-light:checked ~ .content .sub-menu {
+    background-color: #040614;
+    box-shadow: 0px 15px 20px 9px #1b1b1b;
+  }
+
 }
 
 .home-body .dark-light:checked ~ .content .for-text,
@@ -558,7 +572,7 @@ body {
 @media only screen and (max-width : 900px){ 
 
   .home-body #accueil {
-    margin: 170px auto;
+    margin: 140px auto;
   }
 }
 
@@ -593,6 +607,10 @@ body {
   .home-body .menu {
     padding: 27% 0 5%;
   }
+}
+
+.home-body #bonjour {
+  color: #ff9f00;
 }
 
 .home-body #firstname, 
@@ -855,7 +873,7 @@ body {
 
 .header-projet {
   display: flex;
-  gap: 8%;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -865,6 +883,7 @@ body {
 }
 
 #btn-retour a {
+  display: flex;
   color: #000;
   font-size: 12px;
   font-weight: normal;
@@ -876,6 +895,19 @@ body {
     color: #000;
     text-decoration: underline;
   }
+
+#btn-retour p {
+  margin: 3px 0;
+}
+
+/* btn-retour mobile */
+@media only screen and (max-width : 670px){ 
+
+  #btn-retour p {
+    display: none;
+  }
+
+}
 
 .lang-line img {
   height: 85px;
