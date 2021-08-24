@@ -276,10 +276,15 @@ body {
   border-radius: 4px;
 }
 
+.modaux #ap-p-content {
+  height: 550px;
+}
+
 /* modal small mobile */
 @media only screen and (max-width : 800px){
 
   .modaux #ap-p-content {
+    height: 320px;
     overflow-y: scroll;
   }
 
@@ -903,8 +908,11 @@ body {
 /* btn-retour mobile */
 @media only screen and (max-width : 670px){ 
 
-  #btn-retour p {
-    display: none;
+  .header-projet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 
 }
