@@ -21,10 +21,6 @@ h1 {
 
 /* Browser window fake */
 
-#browser {
-    padding: 55px 2%;
-}
-
 #browser .contain {
     border: 3px solid #d0d0d0;
     border-top-left-radius: 4px;
