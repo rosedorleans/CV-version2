@@ -174,13 +174,13 @@
         padding: 3% 1% !important;
     }
                 
-    h1 {
+    .content h1 {
         font-weight: bold;
         margin: 1%;
         padding-top: 2%;
     }
 
-    h2, h3 {
+    .content h2, h3 {
         margin: 2%;
     }
 

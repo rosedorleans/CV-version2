@@ -233,7 +233,7 @@ Layout - Offcanvas
 .offcanvas-leftside {
   max-height: 800px;
   left: 20px;
-  top: 170px;
+  top: 282px;
   transform: translateX(-100%);
   }
 
@@ -276,15 +276,6 @@ Layout - Offcanvas
 
 .offcanvas-title {
   margin-bottom: 40px;
-}
-
-/*mobile-menu Top Area*/
-.mobile-menu-top {
-  font-size: 13px;
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
 }
 
 .mobile-menu-user-menu {
@@ -466,7 +457,8 @@ Layout - Offcanvas
 }
 
 .offcanvas-menu > ul > li {
-  border-bottom: 1px solid transparent;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 .offcanvas-menu > ul > li:last-child {
