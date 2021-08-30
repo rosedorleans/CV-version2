@@ -1,4 +1,12 @@
 
+// Home modal
+
+$(document).ready(function() {
+  $('#myModal').modal('show');
+});
+
+
+
 // === Vars ===
 
 const elementsToObserve = document.querySelectorAll('section[id]'),
@@ -119,35 +127,4 @@ drawPath();
 const observer = new IntersectionObserver(markVisibleSection);
 elementsToObserve.forEach(thisEl => observer.observe(thisEl));
 
-
-
-
-// Afficher / Masquer div
-
-function show_div(id)
-{
-  if (document.getElementById(id).style.visibility == 'visible')
-  {
-       document.getElementById(id).style.visibility = 'hidden';
-  }
-  else
-  {
-       document.getElementById(id).style.visibility = 'visible';
-       
-  }
-}
-
-// Changer la couleur du thème
-
-function change_color(id)
-{
-  if (document.getElementById(id).style.backgroundColor == '#ff7e90')
-  {
-       document.getElementById(id).style.backgroundColor = '#ffac22';
-  }
-  else
-  {
-       document.getElementById(id).style.backgroundColor = '#ff7e90';      
-  }
-}
 
