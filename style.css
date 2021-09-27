@@ -59,17 +59,14 @@ body {
   top: 125px;
   gap: 20px;
   padding-top: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 15px 20px 7px #ececec;
 }
 
-/* menu opaque */
-@media only screen and (max-width: 900px) {
-  .home-body .sub-menu {
-    background-color: #FFF;
-    box-shadow: 0px 15px 20px 7px #ececec;
-  }
-}
 .home-body #sub-menu-row {
   display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
 .home-body .sub-menu a {
@@ -91,6 +88,7 @@ body {
 
 #apropos-projets a {
   float: right;
+  padding: 0 20px 20px 0;
 }
 
 .home-body .menu-item {
@@ -320,6 +318,10 @@ body {
   width: 560px;
 }
 
+#cooking-r-modal p {
+  text-align: left;
+}
+
 .modaux .modal__content p {
   margin: 0;
 }
@@ -508,13 +510,12 @@ body {
   box-shadow: 0 12px 35px 0 #ffeba726;
 }
 
-/* menu opaque */
-@media only screen and (max-width: 900px) {
-  .home-body .dark-light:checked ~ .content .sub-menu {
-    background-color: #040614;
-    box-shadow: 0px 15px 20px 9px #0e0e0e;
-  }
+
+.home-body .dark-light:checked ~ .content .sub-menu {
+  background-color: #040614;
+  box-shadow: 0px 15px 20px 9px #0e0e0e;
 }
+
 .home-body .dark-light:checked ~ .content .for-text,
 .home-body .dark-light:checked ~ .content .for-text a {
   color: #ffffff;
@@ -874,6 +875,10 @@ body {
 
 .irss .lang-line img {
   height: 100px;
+}
+
+.ideabox .lang-line img {
+  height: 135px;
 }
 
 #btn-retour img {

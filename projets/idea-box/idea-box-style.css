@@ -1,0 +1,365 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+
+/* BASE */
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: #d5d5d5;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #6561bb;
+    border-radius: 20px;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navMenu {
+    background-color: #6561bb;
+    height: 190px;
+    width: 100%;
+}
+
+.navMenu--links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.navMenu--links_card {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    .navMenu--links_card:hover {
+        background-color: #4c498e;
+    }
+
+/* menu et connexion fenêtre */
+@media only screen and (max-width : 1300px){
+
+    .navMenu {
+        height: 220px !important;
+    }
+
+    .navMenu--links_user {
+        padding-top: 30px;
+    }
+}
+
+/* menu et connexion mobile */
+@media only screen and (max-width : 700px){
+
+    .navMenu {
+        height: 130px !important;
+    }
+
+    .navMenu--links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block !important;
+    }
+
+    div.menu-pane {
+        display: block !important;
+    }
+}
+
+.navMenu--links a,
+.navMenu--links a:hover {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    display: inline-block;
+    width: 270px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+/* menu mobile */
+
+.hamburger-icon {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 5vh;
+    left: 5vw;
+    padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+    height: 5px;
+    width: 40px;
+    background-color: #FFF;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+    left: -5vw;
+    transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .body-text {
+    display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: translate(0%, 175%) rotate(-45deg);
+    background-color: #000;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+    opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+    opacity: 0;
+}
+
+div.menu-pane {
+    display: none;
+    background-color: #e6f6ff;
+    position: absolute;
+    transform: translateX(-105vw);
+    transform-origin: (0, 0);
+    width: 100vw;
+    height: 100%;
+    transition: 0.6s ease-in-out;
+}
+
+.menu-pane nav {
+    margin: 26%;
+}
+
+.menu-links li, a, span {
+    transition: 0.5s ease-in-out;
+}
+
+.navMenu--links_card-mobile {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    .navMenu--links_card-mobile:hover {
+        background-color: #cde6fd;
+    }
+
+.navMenu--links_card-mobile a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    display: inline-block;
+    width: 270px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    top: 5vh;
+    left: 5vw;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* fin menu mobile */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.navMenu .right {
+    color: #FFF;
+    float: right;
+    text-align: right;
+    font-size: 1.2em;
+    margin: 0;
+    padding-right: 40px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+    .navMenu .connexion:hover {
+        color: #001258;
+    }
+
+.navMenu--connected_name {
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
+}
+
+.navMenu--connected_name > p {
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu--connected_name > img {
+    margin: 6px 13px;
+}
+
+#deco {
+    margin-left: 196px;
+}
+
+.main {
+    width: 80%;
+    margin: 2% auto;
+}
+
+/* main grande fenêtre */
+@media only screen and (max-width : 1300px){
+
+    .main {
+        width: 90%;
+    }
+}
+
+/* main fenêtre */
+@media only screen and (max-width : 900px){
+
+    .main {
+        width: 100%;
+    }
+}
+
+
+
+
+/* ///////////////////////////////////////////////// */
+
+
+
+/* IDEAS */
+
+.main--ideas_titles {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.main--ideas_titles > h1 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 5em;
+}
+
+.grid_item--link {
+    color: #000;
+    text-decoration: none;
+}
+
+    .grid_item--link:hover {
+        text-decoration: underline;
+    }
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.grid_item {
+    height: 330px;
+    width: 365px;
+    justify-self: center;
+    border: 5px solid #6561bb;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid_item--flex {
+    display: flex;
+}
+
+.grid_item--text {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.grid_item--likes {
+    height: 100%;
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+
+.grid_item--likes > p {
+    font-weight: bold;
+}
+
+.like-hover,
+.like-fill,
+.dislike-hover,
+.dislike-fill {
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.like-hover {
+    background-image: url("images/like.png");
+}
+
+.like-hover:hover {
+    background-image: url("images/like-fill.png");
+    transition: 0.2s;
+}
+
+.like-fill {
+    background-image: url("images/like-fill.png");
+}
+
+.dislike-hover {
+    background-image: url("images/dislike.png");
+}
+
+.dislike-hover:hover {
+    background-image: url("images/dislike-fill.png");
+    transition: 0.2s;
+}
+
+.dislike-fill {
+    background-image: url("images/dislike-fill.png");
+}

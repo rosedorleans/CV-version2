@@ -1,11 +1,4 @@
 
-// Home modal
-
-$(document).ready(function() {
-  $('#myModal').modal('show');
-});
-
-
 
 // === Vars ===
 
