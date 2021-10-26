@@ -64,7 +64,6 @@ body {
 }
 
 .home-body #sub-menu-row {
-  display: flex;
   gap: 20px;
   padding: 20px;
 }
@@ -78,6 +77,10 @@ body {
 
 .home-body .sub-menu p {
   font-size: 20px;
+}
+
+.projets-finis {
+  display: flex;
 }
 
 #projets-encours-titre p {
@@ -509,7 +512,6 @@ body {
   color: #000000;
   box-shadow: 0 12px 35px 0 #ffeba726;
 }
-
 
 .home-body .dark-light:checked ~ .content .sub-menu {
   background-color: #040614;
@@ -1074,5 +1076,6 @@ body {
     overflow-y: scroll;
   }
 }
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
