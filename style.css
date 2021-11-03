@@ -79,7 +79,8 @@ body {
   font-size: 20px;
 }
 
-.projets-finis {
+.projets-finis,
+.projets-encours {
   display: flex;
 }
 
@@ -530,17 +531,17 @@ body {
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
-.home-body #accueil {
+.home-body .accueil {
   width: 55%;
   margin: 75px auto;
 }
 
-.home-body #accueil p {
+.home-body .accueil p {
   margin: 0;
   font-size: 23px;
 }
 
-.home-body #accueil h1 {
+.home-body .accueil h1 {
   display: flex;
   line-height: 1.3;
   margin: 0;
@@ -550,36 +551,36 @@ body {
 
 /* accueil medium laptop */
 @media only screen and (max-width: 1400px) {
-  .home-body #accueil {
+  .home-body .accueil {
     width: 65%;
     margin: 100px auto;
   }
 }
 /* accueil small laptop */
 @media only screen and (max-width: 1000px) {
-  .home-body #accueil {
+  .home-body .accueil {
     width: 75%;
     margin: 135px auto;
   }
 
-  .home-body #accueil h1 {
+  .home-body .accueil h1 {
     font-size: 5em !important;
   }
 }
 /* accueil small laptop 2 */
 @media only screen and (max-width: 900px) {
-  .home-body #accueil {
+  .home-body .accueil {
     margin: 140px auto;
   }
 }
 /* accueil ipad */
 @media only screen and (max-width: 700px) {
-  .home-body #accueil {
+  .home-body .accueil {
     width: 85%;
     margin: 50px auto;
   }
 
-  .home-body #accueil h1 {
+  .home-body .accueil h1 {
     font-size: 4em !important;
   }
 
@@ -589,7 +590,7 @@ body {
 }
 /* accueil mobile */
 @media only screen and (max-width: 500px) {
-  .home-body #accueil h1 {
+  .home-body .accueil h1 {
     font-size: 3em !important;
   }
 
@@ -619,15 +620,15 @@ body {
   color: #ff9f00;
 }
 
-.home-body #accueil-text a,
-.home-body #accueil-text span {
+.home-body .accueil-text a,
+.home-body .accueil-text span {
   cursor: pointer;
   color: #ff9f00;
   text-decoration: none;
 }
 
-.home-body #accueil-text a:hover,
-.home-body #accueil-text span:hover {
+.home-body .accueil-text a:hover,
+.home-body .accueil-text span:hover {
   cursor: pointer;
   color: #ff9f00;
   text-decoration: underline;
@@ -1076,6 +1077,71 @@ body {
     overflow-y: scroll;
   }
 }
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Projets */
+.accueil-projets {
+  width: 60% !important;
+  margin: 30px auto !important;
+}
+
+.projets-cards {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+
+.projets-cards > div {
+  box-shadow: 0px 0px 20px 0px #b9b9b9;
+}
+
+.projets-cards > div > a {
+  display: flex;
+  gap: 15px;
+}
+
+.projets-cards > div > a > div {
+  height: 170px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+}
+
+.projets-cards > div > a > div:hover {
+  height: 180px;
+}
+
+#img-projet-irss {
+  background-image: url("../projets/irss/images/irss-logo-full.png");
+}
+
+#img-projet-irss:hover {
+  background-image: url("../projets/irss/images/irss-apercu.png");
+}
+
+#img-projet-sortir {
+  background-image: url("../projets/sortir-com/images/sortir-logo-web.png");
+}
+
+#img-projet-sortir:hover {
+  background-image: url("../projets/sortir-com/images/sortir-apercu.png");
+}
+
+#img-projet-eniencheres {
+  background-image: url("../projets/eni-encheres/images/eniencheres-logo-web.png");
+}
+
+#img-projet-eniencheres:hover {
+  background-image: url("../projets/eni-encheres/images/eniencheres-apercu.png");
+}
+
+.projets-cards > div > a > p {
+  align-self: center;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
